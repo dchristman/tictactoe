@@ -24,7 +24,7 @@ class Player
   def take_turn
     valid_move = false
     while valid_move == false
-      puts "#{@name}, where would like play?"
+      puts "#{@name}, where would you like to play?"
       current_move = gets.chomp.to_sym
       if @@board_state.keys.include?(current_move) && Player.is_valid?(current_move)
         @squares.push(current_move)
